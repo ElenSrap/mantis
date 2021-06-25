@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/*------------  HEADER  ---------------*/
+
+.header-main {
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .06);
+    background: #fff;
+}
+
+.header-main__inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.header-logo {
+    width: 50%;
+}
+
+.header-logo__link {
+    height: 100%;
+    display: block;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.header-nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav__list-item {
+    padding: 11px 13px;
+}
+
+.header-nav__list-item__link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #74798c;
+}
+
+.header-nav__list-item__link.btn {
+    color: #fff;
+    background-color: #DBBC65;
+    height: 100%;
+    padding: 10px 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.header-nav__list-item__link.btn:hover {
+    background-color: #998346;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+/*------------  BANNER  ---------------*/
+
+.section-banner {
+    overflow: hidden;
+}
+
+.section-banner__inner {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.section-banner__info-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: #303440;
+}
+
+.section-banner__info-text {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #74798c;
+    padding: 0;
+}
+
+/*------------  PARTNERS  ---------------*/
+
+.section-partners {
+    padding: 40px 0;
+    background-color: #f3f3f3;
+}
+
+.section-partners__inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.section-partners__icon {
+    width: 25%;
+    text-align: center;
+    padding: 5px 30px;
+}
+
+/*------------  ABOUT US ---------------*/
+
+.section-about-us {
+    padding: 40px 0;
+}
+
+.section-about-us__inner {
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.section-about-us__title {
+    font-family: "Cabin", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: #303440;
+}
+
+.section-about-us__text {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #74798c;
+    padding: 0;
+}
+
+/*------------  SERVICES ---------------*/
+
+.section-services {
+    padding: 40px 0;
+}
+
+.section-services__title {
+    width: 100%;
+    text-align: center;
+    padding: 19px 0 58px;
+    font-size: 34px;
+    line-height: 40px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 19px 0 58px 0;
+}
+
+.section-services__items-in {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.section-services__items-in.is-bottom {
+    margin-top: 51px;
+}
+
+.section-services__item-title {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    border-bottom: 2px solid #dbbc65;
+    color: #303440;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+}
+
+.section-services__item-text {
+    margin: 0;
+    padding: 0;
+    color: #74798c;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+/*------------  CONTACT ---------------*/
+
+.section-contact{
+    background: #dbbc65;
+    padding: 23px 53px;
+}
+
+.section-contact__bottom-image{
+    text-align: right;
+}
