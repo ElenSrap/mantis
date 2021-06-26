@@ -26,6 +26,7 @@ img {
     position: fixed;
     box-shadow: 0 4px 10px rgba(0, 0, 0, .06);
     background: #fff;
+    z-index: 1;
 }
 
 .header-main__inner {
@@ -59,6 +60,20 @@ img {
 
 .header-nav__list-item {
     padding: 11px 13px;
+    transition: .3s;
+}
+
+.header-nav__list-item-btn {
+    padding: 11px 13px;
+}
+
+.header-nav__list-item:hover {
+    border-bottom: 2px solid #dbbc65;
+    color: #000000;
+}
+
+.header-nav__list-item:hover .header-nav__list-item__link {
+    color: #000000;
 }
 
 .header-nav__list-item__link {
@@ -100,6 +115,12 @@ img {
     display: flex;
     align-items: center;
     height: 100vh;
+    padding-top: 75px;
+    position: relative;
+}
+
+.section-banner__info {
+    position: absolute;
 }
 
 .section-banner__info-title {
@@ -118,6 +139,10 @@ img {
     line-height: 28px;
     color: #74798c;
     padding: 0;
+}
+
+.section-banner__image {
+    margin-left: 316px;
 }
 
 /*------------  PARTNERS  ---------------*/
@@ -148,7 +173,14 @@ img {
 .section-about-us__inner {
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.section-about-us__info {
+    position: absolute;
+    position: absolute;
     text-align: right;
+    right: 0;
 }
 
 .section-about-us__title {
@@ -168,6 +200,11 @@ img {
     color: #74798c;
     padding: 0;
 }
+
+.section-about-us__image {
+    margin-right: 378px;
+}
+
 
 /*------------  SERVICES ---------------*/
 
@@ -192,6 +229,10 @@ img {
     display: flex;
     justify-content: space-between;
     text-align: center;
+}
+
+.section-services__item-image {
+    height: 120px;
 }
 
 .section-services__items-in.is-bottom {
@@ -222,11 +263,105 @@ img {
 
 /*------------  CONTACT ---------------*/
 
-.section-contact{
+.section-contact {
     background: #dbbc65;
     padding: 23px 53px;
 }
 
-.section-contact__bottom-image{
+.section-contact__inner{
+    width: 100%;
+    display: flex;
+}
+.section-contact__top-image{
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+}
+.section-contact__bottom-image {
     text-align: right;
+    width: 25%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.section-contact__form{
+    width: 50%;
+    text-align: center;
+    padding: 38px 8px 20px 8px;
+}
+
+.section-contact__form-content-title{
+    font-family: "Cabin",sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    color: #fff;
+    margin: 28px 0 42px 0;
+}
+
+.section-contact__form-content-text{
+    margin: 18px 0 18px 0;
+    font-family: "Roboto-regular",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.section-contact__form-items{
+    padding-top: 20px ;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    color: #000000;
+    justify-content: space-between;
+}
+.section-contact__form-input::placeholder{
+    color: #303440;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.section-contact__form-input{
+    display: block;
+    width: 284px;
+    height: 58px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.section-contact__form-textarea{
+    width: 100%;
+    margin: 0px 0 20px 0;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    height: 139px;
+}
+.section-contact__form-textarea::placeholder{
+    color: #303440;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+
+}
+.section-contact__form-button{
+    min-width: 300px;
+    margin: 0 auto;
+    background: #5a4959;
+    color: #fff;
+    border-radius: 5px;
+    padding: 12px 22px;
+    border: 0;
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
 }
