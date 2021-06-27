@@ -268,15 +268,17 @@ img {
     padding: 23px 53px;
 }
 
-.section-contact__inner{
+.section-contact__inner {
     width: 100%;
     display: flex;
 }
-.section-contact__top-image{
+
+.section-contact__top-image {
     width: 25%;
     display: flex;
     align-items: flex-start;
 }
+
 .section-contact__bottom-image {
     text-align: right;
     width: 25%;
@@ -284,14 +286,14 @@ img {
     align-items: flex-end;
 }
 
-.section-contact__form{
+.section-contact__form {
     width: 50%;
     text-align: center;
     padding: 38px 8px 20px 8px;
 }
 
-.section-contact__form-content-title{
-    font-family: "Cabin",sans-serif;
+.section-contact__form-content-title {
+    font-family: "Cabin", sans-serif;
     font-weight: 700;
     font-size: 34px;
     line-height: 40px;
@@ -299,17 +301,17 @@ img {
     margin: 28px 0 42px 0;
 }
 
-.section-contact__form-content-text{
+.section-contact__form-content-text {
     margin: 18px 0 18px 0;
-    font-family: "Roboto-regular",sans-serif;
+    font-family: "Roboto-regular", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     color: #fff;
 }
 
-.section-contact__form-items{
-    padding-top: 20px ;
+.section-contact__form-items {
+    padding-top: 20px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -317,16 +319,18 @@ img {
     color: #000000;
     justify-content: space-between;
 }
-.section-contact__form-input::placeholder{
+
+.section-contact__form-input::placeholder {
     color: #303440;
     padding-top: 15px;
     padding-left: 10px;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
 }
-.section-contact__form-input{
+
+.section-contact__form-input {
     display: block;
     width: 284px;
     height: 58px;
@@ -335,24 +339,26 @@ img {
     margin-bottom: 30px;
 }
 
-.section-contact__form-textarea{
+.section-contact__form-textarea {
     width: 100%;
     margin: 0px 0 20px 0;
     border-radius: 5px;
     border: 1px solid #e0e0e0;
     height: 139px;
 }
-.section-contact__form-textarea::placeholder{
+
+.section-contact__form-textarea::placeholder {
     color: #303440;
     padding-top: 15px;
     padding-left: 10px;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
 
 }
-.section-contact__form-button{
+
+.section-contact__form-button {
     min-width: 300px;
     margin: 0 auto;
     background: #5a4959;
@@ -360,8 +366,197 @@ img {
     border-radius: 5px;
     padding: 12px 22px;
     border: 0;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 15px;
     line-height: 26px;
+}
+
+/*------------  TEAM ---------------*/
+
+.section-team {
+    padding: 40px 0;
+}
+
+.section-team__inner h2 {
+    padding: 20px 0 40px;
+    margin: 0;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.section-team__members-in {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.section-team__member-content {
+    padding: 0 10px 0 10px;
+}
+
+.section-team__member-name {
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #303440;
+
+}
+
+.section-team__member {
+
+}
+
+.section-team__member-position {
+    border-top: 2px solid #dbbc65;
+    padding-top: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #74798c;
+    opacity: 0;
+}
+
+.section-team__member:hover .section-team__member-position {
+    opacity: 1;
+}
+
+.section-team__member:hover {
+    background-color: #faf6ea;
+    border-radius: 19px;
+
+}
+
+/*------------ FOOTER ---------------*/
+
+.footer-main-top {
+    background-color: #303440;
+    width: 100%;
+}
+
+.footer-main__nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #232428;
+}
+
+.footer-logo{
+    width: 50%;
+}
+
+.footer-logo__link{
+    display: inline-block;
+}
+
+.footer-nav{
+    width: 50%;
+}
+
+.footer-nav__list{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-nav__list-item{
+    padding: 10px;
+}
+
+.footer-nav__list-item-link{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Roboto-regular",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.footer-nav__list-item-link.btn{
+    font-family: "Roboto",sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.footer-main-top-contacts{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+}
+.footer-main__top-contacts__info{
+    width: 90%;
+}
+.footer-main__info-list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-main__info-list__link{
+    text-decoration: none;
+}
+.footer-main__info-list__link span{
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    line-height: 19px;
+    font-size: 16px;
+}
+.footer-main__info-list-item{
+    padding-right: 20px;
+    color: #ffffff;
+}
+.fa{
+    font-size: 14px;
+}
+.footer-main__info-list-item span{
+    margin-left: 10px;
+}
+
+.footer-main-top-contacts__social-media{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-main__social-media-link{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    display: inline-block;
+}
+.footer-main__social-media-link.facebook{
+    margin-right: 20px;
+}
+
+.footer-main__social-media-link img {
+    height: 24px;
+}
+
+.footer-main-bottom{
+    background: #232428;
+}
+
+.footer-main-bottom__inner{
+    padding: 10px 0;
+    text-align: center;
+    font-family: "Roboto-regular",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+
 }
