@@ -395,6 +395,9 @@ img {
     text-align: center;
 }
 
+.section-team__member{
+    transition: .3s ease-in-out;
+}
 .section-team__member-content {
     padding: 0 10px 0 10px;
 }
@@ -405,11 +408,6 @@ img {
     font-size: 20px;
     line-height: 24px;
     color: #303440;
-
-}
-
-.section-team__member {
-
 }
 
 .section-team__member-position {
@@ -430,6 +428,7 @@ img {
 .section-team__member:hover {
     background-color: #faf6ea;
     border-radius: 19px;
+    transform: rotateY(180deg);
 
 }
 
